@@ -1,0 +1,93 @@
+@media (max-width:1230px) {
+
+	.nav-list {
+		display:none;
+	}
+
+	.nav-button {
+		display:block;
+}
+
+
+.nav.open .nav-list {
+
+    /* фиксированная позиция */
+
+    display: flex;
+    flex-direction: column; 
+    row-gap: 40px;
+
+   position:fixed;
+    
+    /* весь список навигации мы растянем по экрану вертикально */
+    
+    top:0;    
+    bottom:0; 
+    left:0; 
+    right:0;
+    background-color:white;
+    z-index:1;
+    padding: 46px 30px;
+
+   
+    font-size: 40px;
+    font-weight: 600;
+
+        
+    }
+
+    .nav-link {
+        color: #828282;
+    }
+
+    .nav-link:active {
+        color:black;
+    }
+
+    .nav-button {
+        position:fixed;
+        z-index: 9;
+        top:46px;
+        right:30px;
+    }
+
+
+    .header-nav {
+    margin-bottom: 50px;
+    }
+
+    .header-row {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .header-content {
+        margin-bottom: 0;
+    }
+
+    .header-img {
+        text-align: center;
+    }
+}
+
+@media (max-width:700px) {
+
+    .header-heading {
+        font-size:34px;
+
+    }
+
+    .header-heading span {
+        font-size:28px;
+        
+    }
+
+    .service-row {
+        flex-wrap: wrap;
+    }
+
+    .service-card {
+        flex: 1 1 0;
+        }
+
+}
